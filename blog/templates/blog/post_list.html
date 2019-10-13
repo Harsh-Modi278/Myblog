@@ -3,6 +3,16 @@
         <title>Django Girls blog</title>
     </head>
     <body>
+
+        <!-- {{post_object}} -->
+
+        {% for i in post_object  %}
+            <div>
+                <p> published: {{i.published_date}} </p>
+                <h2> <a href="">{{i.title}}  </a> </h2>
+                <p>  {{i.text}} </p>
+            </div>
+        {% endfor %}
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
